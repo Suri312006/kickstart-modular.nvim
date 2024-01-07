@@ -14,5 +14,9 @@ return {
 'pangloss/vim-javascript',
 {
 'evanleck/vim-svelte', branch='main'
+},
+  "mbbill/undotree",
+  "tpope/vim-fugitive"
+
 }
-}
+
