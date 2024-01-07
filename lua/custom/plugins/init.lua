@@ -16,7 +16,19 @@ return {
 'evanleck/vim-svelte', branch='main'
 },
   "mbbill/undotree",
-  "tpope/vim-fugitive"
+  "tpope/vim-fugitive",
+  {
+  "nvim-tree/nvim-tree.lua",
+  version = "*",
+  lazy = false,
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+  },
+  config = function()
+    require("nvim-tree").setup {}
+  end,
+}
+
 
 }
 
