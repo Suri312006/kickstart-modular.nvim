@@ -2,4 +2,11 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  "nvim-lua/plenary.nvim",
+  {
+    "theprimeagen/harpoon", 
+    branch="harpoon2",
+    requires = {{"nvim-lua/plenary.nvim"}}
+  },
+}
