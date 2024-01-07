@@ -29,7 +29,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- [[Primeagen Keymaps]
 
 -- command to pull up explorer
-vim.keymap.set("n", "<leader>-", vim.cmd.Ex)
+vim.keymap.set("n", "-", vim.cmd.Ex)
 
 -- visual highlight moving
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
