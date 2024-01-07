@@ -9,4 +9,10 @@ return {
     branch="harpoon2",
     requires = {{"nvim-lua/plenary.nvim"}}
   },
+  
+'othree/html5.vim',
+'pangloss/vim-javascript',
+{
+'evanleck/vim-svelte', branch='main'
+}
 }
