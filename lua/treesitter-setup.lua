@@ -20,6 +20,9 @@ vim.defer_fn(function()
         node_decremental = '<M-space>',
       },
     },
+    autotag={
+      enable = true,
+    },
     textobjects = {
       select = {
         enable = true,
