@@ -28,4 +28,5 @@ return {
       require("nvim-tree").setup {}
     end,
   },
-  "folke/tokyonight.nvim", }
+  {"catppuccin/nvim", as = "catppuccin"
+  }, }
