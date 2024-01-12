@@ -3,5 +3,4 @@ require("custom.configs.undotree")
 require("custom.configs.fugitive")
 require("custom.configs.nvim-tree")
 require("custom.configs.catppuccin")
-
-
+require("custom.configs.neogit")
