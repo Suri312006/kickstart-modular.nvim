@@ -26,7 +26,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 
--- [[Primeagen Keymaps]
+-- [[Primeagen Keymaps]]
 
 
 -- visual highlight moving
@@ -59,12 +59,12 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
-
+vim.keymap.set("n", "q", "<nop>")
 -- tmux command, not sure if it works for me
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 --easy format
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+vim.keymap.set("n", "<leader>F", vim.lsp.buf.format)
 
 -- IDK WHAT THESE FUCKING DO LOLLLLL
 -- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
