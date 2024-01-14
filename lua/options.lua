@@ -22,8 +22,8 @@ vim.opt.wrap = false
 --Undo Tree Settings, need to add extension
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
 -- highlight Settings
 vim.opt.hlsearch = false
