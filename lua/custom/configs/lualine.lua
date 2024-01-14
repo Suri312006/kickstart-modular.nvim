@@ -9,7 +9,7 @@ local config = {
   },
   sections = {
     -- these are to remove the defaults
-    lualine_a = {
+    lualine_c= {
       {
         'filename',
         file_status = true, 
