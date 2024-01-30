@@ -40,4 +40,11 @@ return {
     end,
   },
   {"catppuccin/nvim", as = "catppuccin"
-  }, }
+  }, 'memgraph/cypher.vim',
+'rhysd/conflict-marker.vim',
+'neovim/nvim-lspconfig',
+'MunifTanjim/prettier.nvim'
+
+
+
+}
