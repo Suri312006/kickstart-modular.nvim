@@ -16,18 +16,18 @@ return {
     'evanleck/vim-svelte', branch = 'main'
   },
   "mbbill/undotree",
-{
-  "NeogitOrg/neogit",
-  dependencies = {
-    "nvim-lua/plenary.nvim",         -- required
-    "sindrets/diffview.nvim",        -- optional - Diff integration
+  {
+    "NeogitOrg/neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim",  -- required
+      "sindrets/diffview.nvim", -- optional - Diff integration
 
-    -- Only one of these is needed, not both.
-    "nvim-telescope/telescope.nvim", -- optional
-    "ibhagwan/fzf-lua",              -- optional
+      -- Only one of these is needed, not both.
+      "nvim-telescope/telescope.nvim", -- optional
+      "ibhagwan/fzf-lua",              -- optional
+    },
+    config = true
   },
-  config = true
-},
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
@@ -39,12 +39,40 @@ return {
       require("nvim-tree").setup {}
     end,
   },
-  {"catppuccin/nvim", as = "catppuccin"
+  { "catppuccin/nvim", as = "catppuccin"
   }, 'memgraph/cypher.vim',
-'rhysd/conflict-marker.vim',
-'neovim/nvim-lspconfig',
-'MunifTanjim/prettier.nvim'
+  'rhysd/conflict-marker.vim',
+  'neovim/nvim-lspconfig',
+  'MunifTanjim/prettier.nvim',
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
+
+  {
+    "iamcco/markdown-preview.nvim",
+    ft = { "markdown" },
 
 
+    build = "cd app && npm install",
+    config = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+      vim.keymap.set("n", "<leader>mp", ":MarkdownPreviewToggle <CR>", {})
+    end,
+  },
+  {
+    'akinsho/flutter-tools.nvim',
+    lazy = false,
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+      'stevearc/dressing.nvim',   -- optional for vim.ui.select
+    },
+    config = true,
+  }
 
 }
