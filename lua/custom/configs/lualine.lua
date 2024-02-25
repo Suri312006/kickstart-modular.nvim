@@ -5,8 +5,9 @@ local config = {
     -- Disable sections and component separators
     -- component_separators = '|',
     -- section_separators = '|',
-    -- theme = 'palenight',
-    theme = 'dracula',
+    theme = 'palenight',
+    -- theme = 'gruvbox',
+    -- theme = 'tokyonight'
     -- theme = 'codedark',
   },
   sections = {

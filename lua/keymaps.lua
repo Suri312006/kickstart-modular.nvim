@@ -78,6 +78,9 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- make scripts executabe from vim
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+-- vim.keymap.set("n", "<leader>e", "")
+-- go error
+vim.keymap.set('n', '<leader>ge', 'iif err != nil {\n \n}<Esc> kk i', {noremap = true, silent = true})
 --remap window movement
 -- vim.keymap.set("n", "qk", "<C-w>k")
 -- vim: ts=2 sts=2 sw=2 et
