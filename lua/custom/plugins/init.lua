@@ -5,11 +5,10 @@
 return {
   "nvim-lua/plenary.nvim",
   {
-    "theprimeagen/harpoon",
+    "ThePrimeagen/harpoon",
     branch = "harpoon2",
-    requires = { { "nvim-lua/plenary.nvim" } }
+    dependencies = { "nvim-lua/plenary.nvim" }
   },
-
   'othree/html5.vim',
   'pangloss/vim-javascript',
   {
@@ -39,8 +38,12 @@ return {
       require("nvim-tree").setup {}
     end,
   },
-  { "catppuccin/nvim", as = "catppuccin"
-  }, 'memgraph/cypher.vim',
+
+  --Themes
+  { "catppuccin/nvim",          as = "catppuccin" },
+  "rebelot/kanagawa.nvim",
+
+  'memgraph/cypher.vim',
   'rhysd/conflict-marker.vim',
   'neovim/nvim-lspconfig',
   'MunifTanjim/prettier.nvim',
@@ -93,7 +96,7 @@ return {
       -- refer to the configuration section below
     },
   },
-  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
+  { "ellisonleao/gruvbox.nvim", priority = 1000,  config = true, opts = ... },
   {
     "folke/tokyonight.nvim",
     lazy = false,
@@ -107,13 +110,16 @@ return {
       "nvim-treesitter/nvim-treesitter",
     },
     config = function()
-    require("refactoring").setup(config)
+      require("refactoring").setup(config)
     end,
   },
-{
-  "lervag/vimtex",
-  init = function()
-    -- Use init for configuration, don't use the more common "config".
-  end
-},
+  {
+    "lervag/vimtex",
+    init = function()
+      -- Use init for configuration, don't use the more common "config".
+    end
+  },
+
+  "loctvl842/monokai-pro.nvim",
+
 }
